@@ -1,0 +1,5 @@
+var env = process.env
+
+env["RECAPTCHA_PUBLIC_KEY"] = "6LeP_xwTAAAAAGrI77ZBAcWYyXHr7deSEJiWR0km"
+env["RECAPTCHA_SECRET_KEY"] = "6LeP_xwTAAAAAJ5otQh0HlPs3f5ZOZRKWTT6YYck"
+ 

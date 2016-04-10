@@ -1,0 +1,28 @@
+extends ./layout-main.pug
+
+block content
+    .row
+        h1.success You are recognized as a human!
+    .row
+        h2 Verification Details
+        .well
+            .row
+                .col-sm-6 Your <strong>g-captcha-response</strong>
+                .col-sm-6 <p><code id="g-captcha-response">#{gCaptchaResponse}</code></p>
+            .row
+                .panel.panel-default
+                    .panel-heading Successful response details
+                    .panel-body
+                        .row
+                            p.
+                                <b>Hostname<b>: #{response.hostname}
+                            p.
+                                <b>Challenge solved time</b>: #{response.challenge_ts}
+                        .row
+                            p
+                                b.
+                                    Raw success object:
+                            code.
+                                #{JSON.stringify(response, null, 4)}
+
+                    

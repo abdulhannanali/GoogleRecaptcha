@@ -1,0 +1,14 @@
+extends ./layout-main.pug
+
+block content
+    .row
+        .panel.panel-default
+            .panel-body
+                form(method="POST" action="/verify")
+                    .form-group
+                        .g-recaptcha(data-sitekey="6LeP_xwTAAAAAGrI77ZBAcWYyXHr7deSEJiWR0km")
+                    input.btn.btn-default(type="submit")
+
+block scripts
+    script(src="https://www.google.com/recaptcha/api.js")
+        

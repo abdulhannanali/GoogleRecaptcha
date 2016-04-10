@@ -1,0 +1,22 @@
+extends ./layout-main.pug
+
+block content
+    h1 Google reCaptcha doesn't quite think you are a human
+    .well
+        .row
+            .col-sm-6
+                p g-recaptcha-response
+            .col-sm-6
+                code #{gCaptchaResponse}
+        .row
+            .col-sm-6
+                p ip
+            .col-sm-6
+                code #{ip}
+    .row
+        h2 Raw JSON Response
+        .well
+            code
+                #{JSON.stringify(response, null, 4)}
+            
+            
